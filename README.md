@@ -1,2 +1,2 @@
 # BinLang
-Astromech droid language (aka "Binary") translator and vocalizer
+Astromech droid language (aka "Binary" or "Droidspeak") translator and vocalizer

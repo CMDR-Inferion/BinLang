@@ -6,16 +6,17 @@ import pyaudio
 import sys
 import os
 
-def split(s):
-    return [char for char in s]
 
 if __name__ == '__main__':
 	baseLocation = os.path.dirname(__file__)
 	if len(sys.argv) == 2:
 		word = sys.argv[-1].lower()
 	elif len(sys.argv) == 1:
-		#s = input()
-		word = ['nope','tg','tag','tac','tae','td','tc','td','tc','tac']
+		s = input("Ввод: ")
+		if s == "DT":
+			s = "arpa arpb arpc arpd arpe arpf arpg ca fa fb tra ala alb gta gtb gtc gtd gte gtg gth gti gtj gtk gtl no nope taa tab tac tad tae taf tag tah tb tc td te tf tg th"
+		word = s.split(' ')
+		word.append('tac')
 		#word = ['tg','tac']
 	else:
 		print("Usage : ./BinLang".py (string))
